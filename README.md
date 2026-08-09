@@ -4,7 +4,6 @@ Evidencia **GA7‐220501096‐AA2‐EV01** del proyecto formativo *Sistema de Ge
 Farmacia en Línea*.
 SENA — Tecnólogo en Análisis y Desarrollo de Software — Ficha 3235909.
 
-
 ## Contenido del repositorio
 
 | Carpeta / archivo | Descripción |

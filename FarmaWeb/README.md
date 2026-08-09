@@ -97,6 +97,15 @@ La primera ejecución descarga Tomcat 10.1 (unos 15 MB) y las dependencias.
 
 <http://localhost:8080/farmaweb>
 
+> **Nota sobre la ruta del proyecto.** La carpeta de esta evidencia contiene
+> caracteres no ASCII (la `Ó` de "EJECUCIÓN" y guiones `‐` U+2010 en
+> "GA7‐220501096‐AA2‐EV01"). Al construir la línea de comandos que arranca
+> Tomcat esos caracteres se corrompen y el servidor falla con
+> `ClassNotFoundException: org.apache.catalina.startup.Bootstrap`.
+> Por eso el `pom.xml` instala y ejecuta el servidor en `C:\farmaweb-servidor`,
+> una ruta sin tildes. Si mueves el proyecto a una ruta ya limpia puedes
+> cambiar o quitar la propiedad `dir.tomcat`.
+
 ### Usuarios de prueba
 
 | Correo | Contraseña | Rol |

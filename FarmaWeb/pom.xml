@@ -21,6 +21,19 @@
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <version.tomcat>10.1.30</version.tomcat>
+
+        <!--
+            Carpeta de trabajo de Tomcat, obligatoriamente sin tildes, enies ni
+            guiones especiales.
+
+            La ruta de este proyecto contiene caracteres no ASCII (la O con
+            tilde de "EJECUCION" y guiones U+2010 en el nombre de la evidencia).
+            Al construir la linea de comandos que arranca Tomcat esos caracteres
+            se corrompen y el servidor falla con ClassNotFoundException de
+            org.apache.catalina.startup.Bootstrap. Instalando y ejecutando el
+            servidor desde una ruta ASCII el problema desaparece.
+        -->
+        <dir.tomcat>C:/farmaweb-servidor</dir.tomcat>
     </properties>
 
     <dependencies>
@@ -87,9 +100,12 @@
                         <containerId>tomcat10x</containerId>
                         <zipUrlInstaller>
                             <url>https://archive.apache.org/dist/tomcat/tomcat-10/v${version.tomcat}/bin/apache-tomcat-${version.tomcat}.zip</url>
+                            <downloadDir>${dir.tomcat}/descargas</downloadDir>
+                            <extractDir>${dir.tomcat}/instalacion</extractDir>
                         </zipUrlInstaller>
                     </container>
                     <configuration>
+                        <home>${dir.tomcat}/tomcat10x</home>
                         <properties>
                             <cargo.servlet.port>8080</cargo.servlet.port>
                         </properties>
