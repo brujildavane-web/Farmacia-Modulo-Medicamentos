@@ -1,0 +1,25 @@
+# Dependencias de Node.js (se reinstalan con npm install)
+node_modules/
+
+# Compilacion de Maven del proyecto Java
+FarmaWeb/target/
+*.war
+*.class
+
+# Archivos de configuracion de editores e IDE
+.vscode/
+.idea/
+*.iml
+nbproject/private/
+.settings/
+.classpath
+.project
+
+# Respaldos de MySQL Workbench
+*.mwb.bak
+*.mwb.beforefix
+
+# Archivos del sistema operativo
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
