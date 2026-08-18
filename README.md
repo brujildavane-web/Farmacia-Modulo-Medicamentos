@@ -1,7 +1,6 @@
 # ModuloFarma — Codificación de módulos del software
 
-Evidencia **GA7‐220501096‐AA2‐EV01** del proyecto formativo *Sistema de Gestión de
-Farmacia en Línea*.
+Evidencia **GA7‐220501096‐AA2‐EV01** del proyecto formativo 
 SENA — Tecnólogo en Análisis y Desarrollo de Software — Ficha 3235909.
 
 ## Contenido del repositorio
@@ -12,18 +11,6 @@ SENA — Tecnólogo en Análisis y Desarrollo de Software — Ficha 3235909.
 | [script.js](script.js), [config/](config/), [controllers/](controllers/), [public/](public/) | Primera versión del módulo de medicamentos en Node.js, conservada como evidencia del avance anterior |
 | [Script_BD_Farmacia.sql](Script_BD_Farmacia.sql) | Script DDL original del modelo relacional (GA6‐220501096‐AA2‐EV02) |
 | [BD_Evidencia_Farmacia.mwb](BD_Evidencia_Farmacia.mwb) | Modelo relacional en MySQL Workbench |
-
-## Por qué dos proyectos
-
-La primera entrega se construyó con Node.js nativo. Los criterios de evaluación de
-esta evidencia exigen **formularios HTML con servlets**, **uso de los métodos GET y
-POST** y **elementos de JSP**, que son tecnologías de la plataforma Java; además, el
-documento de estándares de codificación GA7‐220501096‐AA1‐EV02 ya define Java como
-el lenguaje del proyecto.
-
-Por eso los módulos se desarrollaron en `FarmaWeb/` sobre Java (Jakarta Servlets +
-JSP + JDBC), y la versión en Node.js se conserva intacta para documentar la
-trazabilidad del avance.
 
 ## Cómo ejecutar
 
